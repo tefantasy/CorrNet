@@ -1,0 +1,15 @@
+# Python
+*.py[cod]
+*$py.class
+.python-version
+__pycache__
+*.egg-info
+
+
+# MacOSX
+.DS_Store
+._.DS_Store
+._*
+
+# Visual Studio Code
+.vscode
