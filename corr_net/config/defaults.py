@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
+# 
+# Modification: add configurations for CorrNet.
 
 """Configs."""
 from fvcore.common.config import CfgNode

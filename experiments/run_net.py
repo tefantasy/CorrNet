@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
+# 
+# Modification: removed demo code.
 
 """Wrapper to train and test a video classification model."""
 from corr_net.utils.misc import launch_job
