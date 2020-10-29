@@ -19,6 +19,10 @@ Please note that weighted correlation layer is implemented using pure PyTorch AP
 
 ## Experiment results
 
+## CUDA extension for correlation layer
+
+Please refer to [this repository](https://github.com/tefantasy/WeightedCorrelationExtension). Class `WeightedCorrelationLayer` in `corr_net/models/correlation_net/corr.py` can be directly replaced by class `WeightedCorrelationLayerExtension` in the CUDA implementation. 
+
 ## Acknowledgement
 
 **[PySlowFast](https://github.com/facebookresearch/SlowFast)**
