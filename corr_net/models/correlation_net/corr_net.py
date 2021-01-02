@@ -100,6 +100,13 @@ class CorrNetImpl(nn.Module):
         self._initialize_weights()
 
     def forward(self, x):
+        """
+        Args:
+            x (list): Contains exactly ONE tensor of shape (b, c, t, h, w). 
+                      This follows the interface of PySlowFast. 
+        Returns:
+            x (Tensor): Logits for each class. 
+        """
         x = x[0]
         x = self.conv1(x)
         x = self.res2(x)
