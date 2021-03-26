@@ -19,6 +19,14 @@ Please note that weighted correlation layer is implemented using pure PyTorch AP
 
 ## Experiment results
 
+| architecture | depth | top-1 acc | top-5 acc | 
+|----------|-------|-------|-------|
+| corr_26 | R26 | 76.46 | 93.05 |
+| corr_50 | R50 | 77.58 | 93.34 |
+
+All the experiments are conducted on Kinetics-600 (we collected ~368k training examples) dataset. We sample 16 frames as input to the model, with sampling rate of 8. We use cosine decay learning rate policy with warmup: base_lr=0.2, warmup_epochs=30, num_epochs=350. 
+
+
 ## CUDA extension for correlation layer
 
 Please refer to [this repository](https://github.com/tefantasy/WeightedCorrelationExtension). Class `WeightedCorrelationLayer` in `corr_net/models/correlation_net/corr.py` can be directly replaced by class `WeightedCorrelationLayerExtension` in the CUDA implementation. 
